@@ -1,3 +1,4 @@
+//convert all current events in the calender to objects and save them to local storage
 var saveToLocalStorage = function(){
   var arr = []
   $('.hour').each(function(){
@@ -6,6 +7,7 @@ var saveToLocalStorage = function(){
     var id  = $(this).data().hourId;
     console.log('here');
     console.log(value,id);
+    //convert to object
     arr.push({
       'value' : value,
       'time' : id
@@ -13,9 +15,12 @@ var saveToLocalStorage = function(){
   });
   localStorage.setItem("dayTasks",JSON.stringify(arr));
 }
+
+//update the classes on every time block to represent past present or future
 var checkCurrentHour = function(){
   var hourNow = parseInt(moment().format('H'));
 
+  //loop over the time blocks and add the class
   $('.hour').each(function(){
     $(this).removeClass('past')
     .removeClass('present')
@@ -33,6 +38,8 @@ var checkCurrentHour = function(){
 
 
 };
+
+//when first application load, create all the time block and pull data from local storage 
 var inisialRender = function(){
   $( function() {
     $( "#calendar" ).datepicker();
@@ -85,6 +92,7 @@ checkCurrentHour();
 
 inisialRender();
 
+//for every time block create on click function to create an input and handel brur and save event 
 $('.hour').each(function(){
   $(this).click(function(){
   var oldValue = $(this).find('span').text();
@@ -116,6 +124,7 @@ $('.hour').each(function(){
   });
 });
 
+// check every minute to see if the current time is a new hour the change the color code on time blocks
 setInterval(function(){
 checkCurrentHour()
 },60000)
