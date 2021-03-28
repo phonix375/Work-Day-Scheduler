@@ -65,8 +65,11 @@ for(var i = 0; i<24;i++){
   }
   var column2 = $('<div>').addClass(`col-11 hour`)
   .attr('data-hour-id', i);
-
-  var span2 = $('<span>').text(tasks[i].value);
+  var span2 = $('<span>');
+  if(tasks){
+    span2.text(tasks[i].value);
+  }
+  
   $(column2).append(span2);
 
 
