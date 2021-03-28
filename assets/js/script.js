@@ -100,8 +100,18 @@ $('.hour').each(function(){
      var span = $('<span>').text(value);
      input.replaceWith(span);
      saveToLocalStorage();
+     $('.btn-secondary').remove();
+   })
+   var saveBtn = $('<button>').addClass('btn btn-secondary').html('<span class="oi oi-check"></span>');
+   $(saveBtn).on('click',function(){
+    var value = $(input).val().trim();
+    var span = $('<span>').text(value);
+    input.replaceWith(span);
+    saveToLocalStorage();
+    $('.btn-secondary').remove();
    })
     $(this).append(input);
+    $(this).append(saveBtn);
     $(input).focus();
   });
 });

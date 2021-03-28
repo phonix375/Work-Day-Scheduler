@@ -51,7 +51,7 @@ margin-right:auto;
 
 .taskInput{
     height: 100%;
-    width: 100%;
+    width: 90%;
 }
 .present{
     background-color: var(--secondery-color);
@@ -63,4 +63,8 @@ margin-right:auto;
 
 .ui-datepicker-calendar{
     width: 100%;
+}
+.btn-secondary{
+    width: 10%;
+    height: 100%;
 }
