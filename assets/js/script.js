@@ -14,7 +14,7 @@ var saveToLocalStorage = function(){
   localStorage.setItem("dayTasks",JSON.stringify(arr));
 }
 var checkCurrentHour = function(){
-  var hourNow = parseInt(moment().format('hh'));
+  var hourNow = parseInt(moment().format('H'));
 
   $('.hour').each(function(){
     $(this).removeClass('past')
