@@ -9,17 +9,26 @@ Application requirements :
 
 * time blocks for standard day hours
 	because everyone has a different work time, the application is generating 24-hour time blocks (it can be modified to present only 9-5 in the initialrender function by changing the for loop to run from i=9 to i<18)
+	
+	  ![alt text](https://github.com/phonix375/Work-Day-Scheduler/blob/main/TimeBlocks.PNG?raw=true)
+
 
 *the time block is color-coded to indicate whether it is in the past, 	present, or future
 	the past blocks are marked in gray, the current block is marked in blue and the future blocks don't have the background and I'm running an interval to check this every minute 
+	
+	![alt text](https://github.com/phonix375/Work-Day-Scheduler/blob/main/ColorCode1.jpg?raw=true)
 
 *can enter an event on time blocks
 	when you click a time block you will be focused on input for this time block
+	
+	![alt text](https://github.com/phonix375/Work-Day-Scheduler/blob/main/addingNewTask.gif?raw=true)
 
 *When clicking the save button event is saved in local storage
 	when clicking a time block you have the option to enter the task for this time block, to save this task you have 2 options : 
 click anywhere in the app (blur) and the app will save the changes
 Click the save button that will appear when you start to edit the block of time
+
+![alt text](https://github.com/phonix375/Work-Day-Scheduler/blob/main/localStorage.gif?raw=true)
 
 *events persist after page refresh
 	all events of this day are saved to local storage
