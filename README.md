@@ -10,7 +10,7 @@ Application requirements :
 * time blocks for standard day hours
 	because everyone has a different work time, the application is generating 24-hour time blocks (it can be modified to present only 9-5 in the initialrender function by changing the for loop to run from i=9 to i<18)
 	
-	  ![alt text](https://github.com/phonix375/Work-Day-Scheduler/blob/main/TimeBlocks.PNG?raw=true)
+	  ![alt text](https://github.com/phonix375/Work-Day-Scheduler/blob/main/TimeBlocks.PNG)
 
 
 *the time block is color-coded to indicate whether it is in the past, 	present, or future
