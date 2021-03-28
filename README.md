@@ -1,5 +1,8 @@
 Work Day Scheduler
 
+link to application : 
+https://phonix375.github.io/Work-Day-Scheduler/
+
 Application requirements : 
 
 * the current day is displayed at the top of the calendar
