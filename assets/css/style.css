@@ -1,0 +1,62 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 62.5%;
+}
+
+:root{
+    --secondery-color: #79b0c8;
+}
+
+.header{
+    align-items: center;
+}
+#calendar a{
+text-decoration: none;
+color: white;
+}
+
+.ui-state-highlight{
+    background-color: var(--secondery-color);
+    border-radius: 6px;
+}
+
+.headerDate{
+    color: var(--secondery-color);
+    font-size: 2rem;
+    display: inline;
+}
+.headerDay{
+    display: inline;
+    color: white;
+    padding-left: 1rem;
+    font-size: 1.5rem;
+}
+.hour{
+    border: solid var(--secondery-color) 1px;
+    height: 50px;
+    color: white;
+}
+.hoursLabel{
+    color: white;
+}
+.datepicker-center{
+margin-left:auto; 
+margin-right:auto;
+}
+
+.taskInput{
+    height: 100%;
+    width: 100%;
+}
+.present{
+    background-color: var(--secondery-color);
+}
+
+.past{
+    background-color:rgba(74, 77, 74, 0.747);
+}
